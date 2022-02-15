@@ -7,7 +7,8 @@ void main() {
         title:
             const Text('Лучшая надпись',
                 style: TextStyle(color: Colors.white))),
-    body: Padding(padding: ,
+    body: Padding(padding: EdgeInsets.all(25),child: Text('Крупная надпись',
+        style: TextStyle(fontSize: 60, fontWeight: FontWeight.bold))
         ),
   )));
 }
