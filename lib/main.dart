@@ -1,14 +1,24 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
-      home: Scaffold(
-    appBar: AppBar(
-        title:
-            const Text('Лучшая надпись',
-                style: TextStyle(color: Colors.white))),
-    body: Padding(padding: EdgeInsets.all(25),child: Text('Крупная надпись',
-        style: TextStyle(fontSize: 60, fontWeight: FontWeight.bold))
-        ),
-  )));
+  runApp(MyFirstClass());
+}
+
+class MyFirstClass extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+      appBar: AppBar(
+        title: const Text("Первый класс"),
+      ),
+      body: Stack(alignment: Alignment.center,
+        children: [
+          Image(
+            image: AssetImage('assets/icons/world.png'),
+          )
+        ],
+      ),
+    ));
+  }
 }
