@@ -10,7 +10,7 @@ class MyFirstClass extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
       appBar: AppBar(
-        title: const Text("Первый класс"),
+        title: const Text("Класс extends"),
       ),
       body: Stack(alignment: Alignment.center,
         children: [
